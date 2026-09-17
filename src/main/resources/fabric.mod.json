@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "guntape_api",
+	"version": "${version}",
+	"name": "GuntapeAPI",
+	"description": "An API for Fabric Mods designed to make it easier for developers to implement common and efficient features (YAML storage, Event Bus, Async Processing).",
+	"authors": [
+		"Melvin August Martopo"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/guntape-api",
+		"sources": "https://github.com/MelvinAugust/GuntapeAPI"
+	},
+	"license": "MIT",
+	"icon": "assets/guntape_api/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.guntape.api.GuntapeAPI"
+		]
+	},
+	"mixins": [
+		"guntape_api.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
